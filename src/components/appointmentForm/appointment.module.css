@@ -1,0 +1,28 @@
+.container {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.container section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.container * {
+  margin: 0;
+}
+
+.container section>div:not(:last-of-type)>label {
+  display: block;
+}
+
+.container section div+div {
+  margin-left: .5rem;
+}
+
+.container section input {
+  width: fit-content;
+}
